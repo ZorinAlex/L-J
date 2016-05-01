@@ -96,7 +96,11 @@ ul.nav.navbar-nav {
 
 }
 //END HEADER
-
+h3{
+    color:@blue;
+    font-size: 44px;
+    margin-top: 0;
+}
         .nabrusko {
             font-family: Roboto-regular;
             position: relative;
@@ -105,11 +109,7 @@ ul.nav.navbar-nav {
             background-color: @softwhite;
             height: 280px;
             border-bottom: 3px solid @grey;
-            h3{
-                color:@blue;
-                font-size: 44px;
-                margin-top: 0;
-            }
+
             h4{
                 color: darken(@grey,30%);
                 font-size: 25px;
@@ -153,29 +153,45 @@ ul.nav.navbar-nav {
             }
 
         }
-        .kodex {
-            .col-md-6 {
-                margin-top: 50px;
-            }
-            h2{
-                text-align: center;
-                padding-bottom: 35px;
-            }
-            .linegrey {
-                border-bottom: 1px solid #f3f3f3;
-                margin: 0 auto;
-                text-align: center;
-                width: 415px;
-                height: 1px;
-            }
-            .lineblue {
-                border-bottom: 1px solid blue;
-                margin: 0 auto;
-                text-align: center;
-                width: 121px;
-                height: 4px;
-            }
+//KODEX
+.kodex {
+    font-family: Roboto-light;
+    font-size: 16px;
+    margin-bottom: 45px;
+    ul{
+        margin-left:35px;
+        list-style: none;
+        li:before {
+            content: "■";
+            color: @blue;
+            margin-right: 20px;
         }
+    }
+    h2{
+        font-family: Roboto-regular;
+        font-size: 40px;
+        text-align: center;
+        padding-bottom: 35px;
+    }
+    .linegrey {
+        background-color: @grey;
+        margin: 0 auto;
+        text-align: center;
+        width: 415px;
+        height: 2px;
+        margin-bottom: 45px;
+    }
+    .lineblue {
+        background-color: @blue;
+        margin: 0 auto;
+        text-align: center;
+        width: 121px;
+        height: 4px;
+        position: relative;
+        top: -1px;
+    }
+}
+
         .servises {
             text-align: center;
             background-color:#313f72;
