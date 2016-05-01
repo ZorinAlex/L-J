@@ -192,62 +192,119 @@ h3{
     }
 }
 
-        .servises {
-            text-align: center;
-            background-color:#313f72;
-            height: 500px;
-            padding-top: 100px;
-            .linegrey {
-                border-bottom: 1px solid #f3f3f3;
-                margin: 0 auto;
-                text-align: center;
-                width: 415px;
-                height: 1px;
+.servises {
+    font-family: Roboto-light;
+    font-size: 16px;
+    color:@softwhite;
+    margin-bottom: 45px;
+    text-align: center;
+    background-color:@blue;
+    height: 500px;
+    padding-top: 100px;
+    .linegrey {
+        background-color: @grey;
+        margin: 0 auto;
+        text-align: center;
+        width: 415px;
+        height: 2px;
+        margin-bottom: 45px;
             }
-            .lineblue {
-                border-bottom: 1px solid blue;
-                margin: 0 auto;
-                text-align: center;
-                width: 121px;
-                height: 4px;
+    .lineblue {
+        background-color: @softwhite;
+        margin: 0 auto;
+        text-align: center;
+        width: 121px;
+        height: 4px;
+        position: relative;
+        top: -1px;
             }
-            button {
-                width: 545px;
-                height: 113px;
-                margin: 75px 15px;
-                background-color: #d3d6e1;
+            
+    button {
+        margin: 75px 15px;
+        width: 545px;
+        height: 113px;
+        border: none;
+        border-radius: 0;
+        font-family: Roboto-light;
+        font-size: 30px;
             }
+    .btn-default{
+        background-image: none;
+        background-color: @grey;
+        text-shadow: none;
+        color: @blue; 
+            &:hover{
+                background-color: lighten(@grey,20%);
+                .transition();
+                }
+            }
+//моя кнопка             
+            
+//            button {
+//                width: 545px;
+//                height: 113px;
+//                margin: 75px 15px;
+//                background-color: #d3d6e1;
+//            }
         }
 
-        .time {
-            h5 {
-                text-align: left;
-                padding: 50px;
+.time {
+//    font-family: Roboto-light;
+////    font-size: 16px;
+////    margin-bottom: 45px;
+    
+    h5 {
+      text-align: left;
+      padding: 50px;
             }
-            text-align: center;
-            background-color:#fff;
-            height: 500px;
-            padding-top: 100px;
-            .linegrey {
-                border-bottom: 1px solid #f3f3f3;
-                margin: 0 auto;
-                text-align: center;
-                width: 415px;
-                height: 1px;
+        text-align: center;
+        background-color:#fff;
+        height: 500px;
+        padding-top: 100px;
+    .linegrey {
+        background-color: @grey;
+        margin: 0 auto;
+        text-align: center;
+        width: 415px;
+        height: 2px;
+        margin-bottom: 45px;
             }
-            .lineblue {
-                border-bottom: 1px solid blue;
-                margin: 0 auto;
-                text-align: center;
-                width: 121px;
-                height: 4px;
+    .lineblue {
+        background-color: @blue;
+        margin: 0 auto;
+        text-align: center;
+        width: 121px;
+        height: 4px;
+        position: relative;
+        top: -1px;
             }
-            button {
+    button {
+                margin-top:37px;
                 width: 260px;
                 height: 50px;
-                margin: 75px 15px;
-                background-color: #313f72;
+                border: none;
+                border-radius: 0;
+                font-family: Roboto-light;
+                font-size: 19.5px;
+
             }
+            .btn-default{
+                background-image: none;
+                background-color: @blue;
+                text-shadow: none;
+                color: white; 
+                &:hover{
+                    background-color: lighten(@blue,20%);
+                    .transition();
+                }
+            }
+//моя кнопка 
+//            button {
+//                width: 260px;
+//                height: 50px;
+//                margin: 75px 15px;
+//                background-color: #313f72;
+//            }
         }
 
         .response {
@@ -260,72 +317,115 @@ h3{
                 margin-top: 280px;
             }
             .linegrey {
-                border-bottom: 1px solid #f3f3f3;
-                margin: 0 auto;
-                text-align: center;
-                width: 415px;
-                height: 1px;
+        background-color: @grey;
+        margin: 0 auto;
+        text-align: center;
+        width: 415px;
+        height: 2px;
+        margin-bottom: 45px;
             }
-            .lineblue {
-                border-bottom: 1px solid blue;
-                margin: 0 auto;
-                text-align: center;
-                width: 121px;
-                height: 4px;
+    .lineblue {
+        background-color: @blue;
+        margin: 0 auto;
+        text-align: center;
+        width: 121px;
+        height: 4px;
+        position: relative;
+        top: -1px;
             }
 
         }
 
         .order {
             h5 {
-                text-align: left;
-                padding: 50px;
+                text-align: center;
+//                padding: 50px;
             }
             text-align: center;
             background-color:#fff;
             height: 500px;
             padding-top: 100px;
             .linegrey {
-                border-bottom: 1px solid #f3f3f3;
-                margin: 0 auto;
-                text-align: center;
-                width: 415px;
-                height: 1px;
+        background-color: @grey;
+        margin: 0 auto;
+        text-align: center;
+        width: 415px;
+        height: 2px;
+        margin-bottom: 45px;
             }
-            .lineblue {
-                border-bottom: 1px solid blue;
-                margin: 0 auto;
-                text-align: center;
-                width: 121px;
-                height: 4px;
+    .lineblue {
+        background-color: @blue;
+        margin: 0 auto;
+        text-align: center;
+        width: 121px;
+        height: 4px;
+        position: relative;
+        top: -1px;
             }
             button {
+                margin-top:37px;
                 width: 260px;
                 height: 50px;
-                margin: 75px 15px;
-                background-color: #313f72;
+                border: none;
+                border-radius: 0;
+                font-family: Roboto-light;
+                font-size: 19.5px;
+
+            }
+            .btn-default{
+                background-image: none;
+                background-color: @blue;
+                text-shadow: none;
+                color: white; 
+                &:hover{
+                    background-color: lighten(@blue,20%);
+                    .transition();
+                }
+            }
+            
+            
+//            button {
+//                width: 260px;
+//                height: 50px;
+//                margin: 75px 15px;
+//                background-color: #313f72;
+//            }
+        }
+
+
+        .map {
+                        
+            img {
+////                position: relative;
+//                z-index: 1;
             }
         }
 
         .contacts {
-            height: 185px;
-            background-color:#263d74;
-            display: block;
-            margin-top: 300px;
+            font-family: Roboto-regular;
             position: relative;
+            top:155px;
+            padding-top: 30px;
+            background-color: @blue;
+            height: 185px;
+            border-top: 3px solid #132b65; 
             z-index: 2;
             p {
                 text-align: center;
                 color: #fff;
             }
+            
+            
+//            height: 185px;
+//            background-color:#263d74;
+//            display: block;
+//            margin-top: 300px;
+//            position: relative;
+//            z-index: 2;
+
 
         }
-        .map {
-            img {
-                position: relative;
-                z-index: 1;
-            }
-        }
+
         .futer {
             background-color:#232323;
             height: 35px;
