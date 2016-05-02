@@ -97,9 +97,11 @@ ul.nav.navbar-nav {
 }
 //END HEADER
 h3{
+    font-family: Roboto-regular;
     color:@blue;
     font-size: 44px;
     margin-top: 0;
+    margin-bottom: 20px;
 }
         .nabrusko {
             font-family: Roboto-regular;
@@ -194,13 +196,18 @@ h3{
 
 .servises {
     font-family: Roboto-light;
-    font-size: 16px;
-    color:@softwhite;
     margin-bottom: 45px;
     text-align: center;
     background-color:@blue;
     height: 500px;
     padding-top: 100px;
+    h3{
+        color:@softwhite;
+    }
+    h5{
+        font-size: 18px;
+        color: @softwhite;
+    }
     .linegrey {
         background-color: @grey;
         margin: 0 auto;
@@ -238,25 +245,16 @@ h3{
                 .transition();
                 }
             }
-//моя кнопка             
-            
-//            button {
-//                width: 545px;
-//                height: 113px;
-//                margin: 75px 15px;
-//                background-color: #d3d6e1;
-//            }
         }
 
 .time {
-//    font-family: Roboto-light;
-////    font-size: 16px;
-////    margin-bottom: 45px;
-    
-    h5 {
-      text-align: left;
-      padding: 50px;
-            }
+
+    p {
+       font-family: Roboto-light;
+       font-size: 18px;
+       text-align: left;
+       padding: 40px 80px;
+    }
         text-align: center;
         background-color:#fff;
         height: 500px;
@@ -264,7 +262,6 @@ h3{
     .linegrey {
         background-color: @grey;
         margin: 0 auto;
-        text-align: center;
         width: 415px;
         height: 2px;
         margin-bottom: 45px;
@@ -272,7 +269,6 @@ h3{
     .lineblue {
         background-color: @blue;
         margin: 0 auto;
-        text-align: center;
         width: 121px;
         height: 4px;
         position: relative;
@@ -298,32 +294,53 @@ h3{
                     .transition();
                 }
             }
-//моя кнопка 
-//            button {
-//                width: 260px;
-//                height: 50px;
-//                margin: 75px 15px;
-//                background-color: #313f72;
-//            }
+
         }
+.res-stripe{
+    background-color:@softwhite;
+    height: 500px;
+    width: 100%;
+    position: absolute;
+}
+.response {
+    text-align: center;
 
-        .response {
-            text-align: center;
-            background-color:#f6f6f6;
-            height: 655px;
-            padding-top: 100px;
+    height: 655px;
+    padding-top: 100px;
+    h5{
+        font-family: Roboto-light;
+        font-size: 18px;
+        margin-bottom: 50px;
+        padding:0 80px;
+    }
+    p{
+        font-family: Roboto-regular;
+        display: inline-block;
+        font-size: 20px;
+        font-weight: 600;
+        padding:0;
+    }
+    .fa{
+        display: inline-block;
+        font-size: 30px;
+        color: @blue;
+        padding: 18px 0 0 0;
+        &:hover{
+            color:lighten(@blue, 20%);
+        }
+    }
 
-            img {
-                margin-top: 280px;
-            }
-            .linegrey {
+    .video {
+
+    }
+    .linegrey {
         background-color: @grey;
         margin: 0 auto;
         text-align: center;
         width: 415px;
         height: 2px;
         margin-bottom: 45px;
-            }
+    }
     .lineblue {
         background-color: @blue;
         margin: 0 auto;
@@ -335,24 +352,22 @@ h3{
             }
 
         }
+//response end
+.order {
+    h5 {
+        text-align: center;
 
-        .order {
-            h5 {
-                text-align: center;
-//                padding: 50px;
-            }
-            text-align: center;
-            background-color:#fff;
-            height: 500px;
-            padding-top: 100px;
-            .linegrey {
+    }
+    text-align: center;
+    padding-top: 100px;
+    .linegrey {
         background-color: @grey;
         margin: 0 auto;
         text-align: center;
         width: 415px;
         height: 2px;
         margin-bottom: 45px;
-            }
+    }
     .lineblue {
         background-color: @blue;
         margin: 0 auto;
@@ -361,74 +376,59 @@ h3{
         height: 4px;
         position: relative;
         top: -1px;
-            }
-            button {
-                margin-top:37px;
-                width: 260px;
-                height: 50px;
-                border: none;
-                border-radius: 0;
-                font-family: Roboto-light;
-                font-size: 19.5px;
+    }
+    button {
+        margin-top:37px;
+        width: 260px;
+        height: 50px;
+        border: none;
+        border-radius: 0;
+        font-family: Roboto-light;
+        font-size: 19.5px;
 
-            }
-            .btn-default{
-                background-image: none;
-                background-color: @blue;
-                text-shadow: none;
-                color: white; 
-                &:hover{
-                    background-color: lighten(@blue,20%);
-                    .transition();
-                }
-            }
-            
-            
-//            button {
-//                width: 260px;
-//                height: 50px;
-//                margin: 75px 15px;
-//                background-color: #313f72;
-//            }
+    }
+    .btn-default{
+        background-image: none;
+        background-color: @blue;
+        text-shadow: none;
+        color: white;
+        &:hover{
+            background-color: lighten(@blue,20%);
+            .transition();
         }
+    }
 
 
-        .map {
-                        
-            img {
-////                position: relative;
-//                z-index: 1;
-            }
-        }
+}
 
-        .contacts {
-            font-family: Roboto-regular;
-            position: relative;
-            top:155px;
-            padding-top: 30px;
-            background-color: @blue;
-            height: 185px;
-            border-top: 3px solid #132b65; 
-            z-index: 2;
-            p {
-                text-align: center;
-                color: #fff;
-            }
-            
-            
-//            height: 185px;
-//            background-color:#263d74;
-//            display: block;
-//            margin-top: 300px;
-//            position: relative;
-//            z-index: 2;
+.map {
+    img {
+        position: relative;
+        top:-50px;
+        z-index: -999;
+    }
+}
 
+.contacts {
+    font-family: Roboto-regular;
+    padding-top: 30px;
+    background-color: @blue;
+    height: 185px;
+    border-top: 3px solid #132b65;
+    p {
+        text-align: center;
+        color: @softwhite;
+    }
 
-        }
+}
+.footer {
+    background-color:@blue;
+    color: @softwhite;
+    height: 35px;
+    text-align: center;
+    p{
+        padding-top: 8px;
+    }
+}
 
-        .futer {
-            background-color:#232323;
-            height: 35px;
-            text-align: center;
-        }
 
