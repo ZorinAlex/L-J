@@ -354,6 +354,8 @@ h3{
         }
 //response end
 .order {
+    position: relative;
+    margin-top: 250px;
     h5 {
         text-align: center;
 
@@ -400,11 +402,19 @@ h3{
 
 
 }
+.form-group {
+    input {
+        width: 20%;
+        margin: 0 auto;
+        border: 0px;
+        border-bottom: 4px solid @grey;
+    }
+}
 
 .map {
     img {
         position: relative;
-        top:-50px;
+        top:-135px;
         z-index: -999;
     }
 }
@@ -412,6 +422,7 @@ h3{
 .contacts {
     font-family: Roboto-regular;
     padding-top: 30px;
+    margin-top: 80px;
     background-color: @blue;
     height: 185px;
     border-top: 3px solid #132b65;
@@ -422,10 +433,12 @@ h3{
 
 }
 .footer {
-    background-color:@blue;
+    background-color:@black;
     color: @softwhite;
     height: 35px;
     text-align: center;
+    position: relative;
+    top: -135px;
     p{
         padding-top: 8px;
     }
