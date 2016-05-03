@@ -103,58 +103,58 @@ h3{
     margin-top: 0;
     margin-bottom: 20px;
 }
-        .nabrusko {
-            font-family: Roboto-regular;
-            position: relative;
-            top:-45px;
-            padding-top: 30px;
-            background-color: @softwhite;
-            height: 280px;
-            border-bottom: 3px solid @grey;
+.nabrusko {
+    font-family: Roboto-regular;
+    position: relative;
+    top:-45px;
+    padding-top: 30px;
+    background-color: @softwhite;
+    height: 280px;
+    border-bottom: 3px solid @grey;
 
-            h4{
-                color: darken(@grey,30%);
-                font-size: 25px;
-            }
-            p{
-                font-family: Roboto-light;
-                font-size: 16px;
-            }
-            .line {
-                border-left: 2px solid @grey;
+    h4{
+        color: darken(@grey,30%);
+        font-size: 25px;
+    }
+    p{
+        font-family: Roboto-light;
+        font-size: 16px;
+    }
+    .line {
+        border-left: 2px solid @grey;
 
-            }
+    }
 
-            .block::after {
-                content: '';
-                position: absolute; /* Абсолютное позиционирование */
-                right: 18px;
-                top: -48px; /* Положение треугольника */
-                border: 10px solid transparent; /* Прозрачные границы */
-                border-bottom: 10px solid @softwhite; /* Добавляем треугольник */
-            }
-            button {
-                margin-top:37px;
-                width: 255px;
-                height: 50px;
-                border: none;
-                border-radius: 0;
-                font-family: Roboto-light;
-                font-size: 16px;
+    .block::after {
+        content: '';
+        position: absolute; /* Абсолютное позиционирование */
+        right: 18px;
+        top: -48px; /* Положение треугольника */
+        border: 10px solid transparent; /* Прозрачные границы */
+        border-bottom: 10px solid @softwhite; /* Добавляем треугольник */
+    }
+    button {
+        margin-top:37px;
+        width: 255px;
+        height: 50px;
+        border: none;
+        border-radius: 0;
+        font-family: Roboto-light;
+        font-size: 16px;
 
-            }
-            .btn-default{
-                background-image: none;
-                background-color: @blue;
-                text-shadow: none;
-                color: white;
-                &:hover{
-                    background-color: lighten(@blue,20%);
-                    .transition();
-                }
-            }
-
+    }
+    .btn-default{
+        background-image: none;
+        background-color: @blue;
+        text-shadow: none;
+        color: white;
+        &:hover{
+            background-color: lighten(@blue,20%);
+            .transition();
         }
+    }
+
+}
 //KODEX
 .kodex {
     font-family: Roboto-light;
@@ -245,7 +245,7 @@ h3{
                 .transition();
                 }
             }
-        }
+}
 
 .time {
 
@@ -258,7 +258,7 @@ h3{
         text-align: center;
         background-color:#fff;
         height: 500px;
-        padding-top: 100px;
+        padding-top: 80px;
     .linegrey {
         background-color: @grey;
         margin: 0 auto;
@@ -298,7 +298,7 @@ h3{
         }
 .res-stripe{
     background-color:@softwhite;
-    height: 500px;
+    height: 650px;
     width: 100%;
     position: absolute;
 }
@@ -306,12 +306,12 @@ h3{
     text-align: center;
 
     height: 655px;
-    padding-top: 100px;
+    padding-top: 80px;
     h5{
         font-family: Roboto-light;
         font-size: 18px;
         margin-bottom: 50px;
-        padding:0 80px;
+
     }
     p{
         font-family: Roboto-regular;
@@ -331,7 +331,7 @@ h3{
     }
 
     .video {
-
+        margin-top: 50px;
     }
     .linegrey {
         background-color: @grey;
@@ -356,6 +356,7 @@ h3{
 .order {
     position: relative;
     margin-top: 250px;
+    margin-bottom: 100px;
     h5 {
         text-align: center;
 
@@ -406,42 +407,48 @@ h3{
     input {
         width: 20%;
         margin: 0 auto;
-        border: 0px;
+        border: 0;
+        box-shadow: none;
+        border-radius: 0;
         border-bottom: 4px solid @grey;
     }
 }
 
-.map {
-    img {
-        position: relative;
-        top:-135px;
-        z-index: -999;
-    }
+#map {
+    width: 100%;
+    height: 350px;
 }
-
 .contacts {
     font-family: Roboto-regular;
     padding-top: 30px;
-    margin-top: 80px;
+    margin-top: 0;
     background-color: @blue;
     height: 185px;
     border-top: 3px solid #132b65;
+    z-index: 999;
+    position: absolute;
+    top: -35px;
+    left: 6%;
+
+
+}
+.footer {
+    position: relative;
     p {
         text-align: center;
         color: @softwhite;
     }
 
+
+
 }
-.footer {
+.dark{
+    padding-top: 8px;
     background-color:@black;
     color: @softwhite;
     height: 35px;
     text-align: center;
-    position: relative;
-    top: -135px;
-    p{
-        padding-top: 8px;
-    }
 }
 
+@import "media";
 
