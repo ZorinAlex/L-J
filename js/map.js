@@ -21,8 +21,34 @@ function initMap() {
         infowindow.open(map, marker);
     });
 }
-window.onload = function() {
+var comments = ["Помогли снять искусственно созданную задолженность","Благодаря Вам я вышел из тюрьмы","За умеренную плату вытащили братана - не забуду","Уважуха кенты всем рассказал на зоне про вас - клиентов море"];
+var counter = 0;
 
-};
+function change(click_direction) {
+
+    var max_counter = comments.length-1;
+    var element = document.getElementById('active');
+    if(click_direction=="right"){
+        counter++;
+        if(counter>max_counter){
+            counter = 0;
+        }
+    }else{
+        counter--;
+        if(counter<0){
+            counter=max_counter;
+        }
+    }
+    element.style.color="#f4f3f3";
+
+    element.addEventListener('transitionend', function() {
+        element.style.color="black";
+    });
+    element.addEventListener('transitionend', function() {
+        element.innerHTML = comments[counter];
+    });
+
+}
+
 
 
