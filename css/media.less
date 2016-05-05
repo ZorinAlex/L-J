@@ -1,6 +1,4 @@
-@media (max-width: 480px) {
-
-}
+@import "color";
 
 @media (max-width: 1200px) {
 
@@ -73,18 +71,16 @@
     }
   }
   .servises {
-    height: 300px;
     padding-top: 20px;
     button {
-      margin: 25px 0;
       width: 265px;
       height: 80px;
       font-size: 25px;
     }
   }
   .time {
-    height: 340px;
     padding-top: 0;
+    padding-bottom: 30px;
   }
   .response {
     padding-top: 35px;
@@ -100,9 +96,13 @@
 
 
 @media (max-width: 768px) {
+  h3{
+    font-size: 25px;
+  }
+
   .header{
     height: 480px;
-    background-position-x: -200px;
+    background-position-x: -250px;
   }
   .text{
     margin: 0 auto;
@@ -119,7 +119,9 @@
     }
   }
   .nabrusko {
-
+    h4{
+      font-size: 18px;
+    }
     .line {
       border-left: none;
 
@@ -131,7 +133,7 @@
   .servises {
     padding-top: 20px;
     button {
-      margin: 25px 0;
+      margin: 0 0 10px 0;
       width: 200px;
       height: 50px;
       font-size: 18px;
@@ -148,6 +150,57 @@
     position: static;
   }
   .order{
+    padding-top: 30px;
     margin-bottom: 50px;
+  }
+  .response{
+    background-color: @softwhite;
+    padding-bottom: 30px;
+    p{
+      font-size: 16px;
+    }
+  }
+  .linegrey {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .lineblue {
+    width: 30%;
+  }
+
+  .nabrusko, .time,.order{
+    button {
+      width: 90%;
+      height: 50px;
+
+    }
+
+  }
+  .kodex {
+    .col-xs-12 p:last-child{
+      border-bottom: 2px solid @softwhite;
+      padding-bottom: 10px;
+    }
+  }
+
+}
+
+@media (max-width: 370px) {
+  h3{
+    font-size: 20px;
+  }
+  .text{
+    margin: 5px 0;
+    padding: 0;
+    width: 100%;
+    height: 60px;
+    h1 {
+      font-size: 16px;
+      width: 100%;
+    }
+  }
+
+  .header{
+    background-position-x: -300px;
   }
 }

@@ -2,6 +2,55 @@
 @import "color";
 @import "mixin";
 
+//GLOBAL
+.linegrey {
+    background-color: @grey;
+    margin: 0 auto;
+    text-align: center;
+    width: 415px;
+    height: 2px;
+    margin-bottom: 45px;
+}
+.lineblue {
+    background-color: @blue;
+    margin: 0 auto;
+    text-align: center;
+    width: 121px;
+    height: 4px;
+    position: relative;
+    top: -1px;
+}
+
+h3{
+    font-family: Roboto-regular;
+    color:@blue;
+    font-size: 44px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.nabrusko, .time,.order{
+    button {
+        margin-top:37px;
+        width: 255px;
+        height: 50px;
+        border: none;
+        border-radius: 0;
+        font-family: Roboto-light;
+        font-size: 16px;
+
+    }
+    .btn-default{
+        background-image: none;
+        background-color: @blue;
+        text-shadow: none;
+        color: white;
+        &:hover{
+            background-color: lighten(@blue,20%);
+            .transition();
+        }
+    }
+}
+
 //HEADER
 .container-fluid {
     padding: 0;
@@ -97,13 +146,7 @@ ul.nav.navbar-nav {
 
 }
 //END HEADER
-h3{
-    font-family: Roboto-regular;
-    color:@blue;
-    font-size: 44px;
-    margin-top: 0;
-    margin-bottom: 20px;
-}
+
 .nabrusko {
     font-family: Roboto-regular;
     position: relative;
@@ -134,26 +177,7 @@ h3{
         border: 10px solid transparent; /* Прозрачные границы */
         border-bottom: 10px solid @softwhite; /* Добавляем треугольник */
     }
-    button {
-        margin-top:37px;
-        width: 255px;
-        height: 50px;
-        border: none;
-        border-radius: 0;
-        font-family: Roboto-light;
-        font-size: 16px;
 
-    }
-    .btn-default{
-        background-image: none;
-        background-color: @blue;
-        text-shadow: none;
-        color: white;
-        &:hover{
-            background-color: lighten(@blue,20%);
-            .transition();
-        }
-    }
 
 }
 //KODEX
@@ -176,23 +200,7 @@ h3{
         text-align: center;
         padding-bottom: 35px;
     }
-    .linegrey {
-        background-color: @grey;
-        margin: 0 auto;
-        text-align: center;
-        width: 415px;
-        height: 2px;
-        margin-bottom: 45px;
-    }
-    .lineblue {
-        background-color: @blue;
-        margin: 0 auto;
-        text-align: center;
-        width: 121px;
-        height: 4px;
-        position: relative;
-        top: -1px;
-    }
+
 }
 
 .servises {
@@ -208,22 +216,9 @@ h3{
         font-size: 18px;
         color: @softwhite;
     }
-    .linegrey {
-        background-color: @grey;
-        margin: 0 auto;
-        text-align: center;
-        width: 415px;
-        height: 2px;
-        margin-bottom: 45px;
-            }
+
     .lineblue {
         background-color: @softwhite;
-        margin: 0 auto;
-        text-align: center;
-        width: 121px;
-        height: 4px;
-        position: relative;
-        top: -1px;
             }
             
     button {
@@ -257,43 +252,7 @@ h3{
     }
         text-align: center;
         background-color:#fff;
-        height: 500px;
-        padding-top: 80px;
-    .linegrey {
-        background-color: @grey;
-        margin: 0 auto;
-        width: 415px;
-        height: 2px;
-        margin-bottom: 45px;
-            }
-    .lineblue {
-        background-color: @blue;
-        margin: 0 auto;
-        width: 121px;
-        height: 4px;
-        position: relative;
-        top: -1px;
-            }
-    button {
-                margin-top:37px;
-                width: 260px;
-                height: 50px;
-                border: none;
-                border-radius: 0;
-                font-family: Roboto-light;
-                font-size: 19.5px;
-
-            }
-            .btn-default{
-                background-image: none;
-                background-color: @blue;
-                text-shadow: none;
-                color: white; 
-                &:hover{
-                    background-color: lighten(@blue,20%);
-                    .transition();
-                }
-            }
+        padding: 80px 0;
 
         }
 .res-stripe{
@@ -332,23 +291,7 @@ h3{
     .video {
         margin-top: 50px;
     }
-    .linegrey {
-        background-color: @grey;
-        margin: 0 auto;
-        text-align: center;
-        width: 415px;
-        height: 2px;
-        margin-bottom: 45px;
-    }
-    .lineblue {
-        background-color: @blue;
-        margin: 0 auto;
-        text-align: center;
-        width: 121px;
-        height: 4px;
-        position: relative;
-        top: -1px;
-            }
+
 
         }
 //response end
@@ -361,44 +304,6 @@ h3{
     }
     text-align: center;
     padding-top: 100px;
-    .linegrey {
-        background-color: @grey;
-        margin: 0 auto;
-        text-align: center;
-        width: 415px;
-        height: 2px;
-        margin-bottom: 45px;
-    }
-    .lineblue {
-        background-color: @blue;
-        margin: 0 auto;
-        text-align: center;
-        width: 121px;
-        height: 4px;
-        position: relative;
-        top: -1px;
-    }
-    button {
-        margin-top:37px;
-        width: 260px;
-        height: 50px;
-        border: none;
-        border-radius: 0;
-        font-family: Roboto-light;
-        font-size: 19.5px;
-
-    }
-    .btn-default{
-        background-image: none;
-        background-color: @blue;
-        text-shadow: none;
-        color: white;
-        &:hover{
-            background-color: lighten(@blue,20%);
-            .transition();
-        }
-    }
-
 
 }
 .form-group {
@@ -428,7 +333,6 @@ h3{
     left: 50%;
     margin-left: -580px;
 
-
 }
 .footer {
     position: relative;
@@ -436,8 +340,6 @@ h3{
         text-align: center;
         color: @softwhite;
     }
-
-
 
 }
 .dark{
