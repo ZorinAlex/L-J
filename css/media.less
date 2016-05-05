@@ -14,7 +14,7 @@
 
 .header{
   height: 635px;
-  background-position-x: -100px;
+
 }
 .servises {
   padding-top: 80px;
@@ -53,9 +53,7 @@
   h3{
     font-size: 30px;
   }
-  .header{
-    background-position-x: -245px;
-  }
+
   .nabrusko button {
     margin-top: 0;
 
@@ -96,13 +94,52 @@
 
 
 @media (max-width: 768px) {
+  //dropdown
+  #bs-example-navbar-collapse-1 {
+      margin-top: 20px;
+      background-color:@softwhite;
+      padding: 0;
+      width: 150px;
+      float: right;
+      overflow: hidden;
+      li {
+        width: 100%;
+        .active{
+            border: 4px solid @blue;
+            border-style: none none none solid ;
+
+        }
+        a:hover{
+          background-color: lighten(@softwhite,1%);
+        }
+
+      }
+    .navbar-right {
+      margin: 0;
+      border-top: 2px solid @grey;
+      padding-bottom: 10px;
+
+      li{
+       width: auto;
+        display: inline-block;
+      }
+      a{
+
+      }
+      p{
+        width: 15px;
+        margin: 0;
+      }
+    }
+  }
+
   h3{
     font-size: 25px;
   }
 
   .header{
     height: 480px;
-    background-position-x: -250px;
+
   }
   .text{
     margin: 0 auto;
@@ -200,7 +237,5 @@
     }
   }
 
-  .header{
-    background-position-x: -300px;
-  }
+
 }
